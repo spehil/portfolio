@@ -1,0 +1,383 @@
+@charset "UTF-8";   /* 인코딩 문자 깨짐 방지 */
+
+html {
+    /* 사용자가 설정한 문자 크기 그대로 반영 될 수 있도록 */
+    font-size : 100%;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+body {
+    color : #432;
+    line-height: 2.0;
+}
+
+a {
+    text-decoration : none;
+}
+
+img {
+    max-width : 100%;
+}
+
+/* header ------------------------------------------------ */
+
+/* 로고 크기 및 여백 */
+
+
+/* nav 메뉴 */
+.main-nav {
+    display: flex;
+    list-style-type: none;
+    font-size : 1.25rem;
+    text-transform: uppercase;
+    justify-content: center;
+    padding-top:100px;
+    
+
+}
+
+/*menu-btn버튼*/
+.btn{
+    padding: 10px 30px;
+    margin-left : 36px;
+    list-style-type: none;
+    border: 3px solid white;
+    color: white;
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;/*텍스트를 대문자로 표시*/
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.825rem;
+    letter-spacing: 0.3em;
+    color: rgba(223,190,106,0.7);
+    /* border-radius: 0; */
+    border-radius: 100px; /*테두리*/
+    /* padding: 18px 80px 20px; */
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));/*선형 그래디언트()는 직선을 따라 두 가지 이상의 색상 사이의 점진적인 전이로 구성된 이미지를 생성*/
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    width: 300px;
+    border: none;
+    border: 1px solid rgba(223,190,106,0.3);
+    padding: 20px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: #fff;
+    border: 1px solid rgba(223,190,106,0);
+    color: white;
+    background-position: 99% 50%;
+  }
+
+
+  
+
+
+.main-nav a {
+    color : #432;
+}
+
+
+
+.aboutMe{
+
+    margin-top: 70px;
+}
+
+
+
+.introduce1{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 180px;
+    padding-top: 13px;
+    padding-left: 400px;
+    
+    
+}
+
+.introduce2{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 180px;
+    padding-top: 80px;
+    padding-left: 400px;
+   
+}
+
+.resume{
+   margin-left: 20px;
+}
+
+.resume2{
+    padding-right: 200px;
+    display: flex;
+    margin-left: 70px;
+}
+
+.resumeName{
+
+
+}
+
+.introFirst{
+    display: flex;
+}
+
+.introTwo{
+    padding-left: 70px;
+    padding-right:  50px;
+
+    display: flex;
+}
+
+.introThree{
+
+    padding-left: 20px;
+}
+
+.introFour{
+
+    display: flex;
+}
+
+
+.introFive{
+
+    display: flex;
+    padding-left: 90px;
+}
+
+.introSix{
+
+    padding-left: 20px;
+}
+
+.emailGuide{
+
+    padding-left: 20px;
+}
+
+.birthday{
+
+    padding-left: 30px;
+}
+
+
+
+/*기술스택*/
+
+.skillStack{
+    margin-top: 130px;
+
+    margin-bottom: 180px;
+    padding-left:  170px;
+    padding-right: 170px ;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   
+   
+
+}
+
+
+
+
+/*project 소개부분*/
+
+
+.project-row1{
+    display: flex;
+    justify-content: center;
+    padding:0px 170px ;
+  
+}
+
+.project-row2{
+    padding:0px 170px ;
+    display: flex;
+    justify-content: center;
+
+   
+}
+
+/*프로젝트 이미지사진 조정*/
+.project{ width: 400px; height: 250px;
+
+    text-align :center; 
+
+    
+}
+
+
+/* .project:hover{
+    
+    transform:translate(-10px,-10px);
+   
+
+} */
+
+
+.project {overflow: hidden;}
+.project-image {width: 100%; height: auto;}
+.project-image:hover {transform: scale(1.05, 1.05); transition-duration: 0.5s;}
+.project-image {transition-duration: 0.3s;}
+
+/*이미지를 가로 300px으로 출력하되
+
+이미지에 마우스오버하면 가로세로 각각 1.2배 확대가 0.5초에 걸쳐 일어나고, 
+
+마우스를 떼면 0.3초에 걸쳐 다시 원래 크기로 돌아가게 되도록 설정한 것이다.*/
+
+
+
+
+
+
+/*
+transform 속성은 Flash 나 JavaScript를 사용하지 않고 요소를 애니메이션
+translate () 함수는 기본적으로 X 축과 Y 축을 따라 지정된 거리만큼 요소를 이동*/
+
+.num2{ margin-left: 50px;}
+.num3{margin-left: 50px;}
+.num5{margin-left: 50px;}
+.num6{margin-left: 50px;}
+
+.project-row1{
+    margin-top: 100px;
+    /* padding-bottom: 100px; */
+}
+
+/* 프로젝트 세부사항 설명부분*/
+.contents{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    /* border: 1px solid  blue; */
+
+
+    margin-top: 20px;
+   
+    margin-bottom: 80px;
+   
+    
+}
+
+.detail-content{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    line-height: normal;
+
+}
+
+
+.explain{
+
+    padding-top: 10px;
+}
+
+
+
+/* .view{
+    transform: translateY(.5rem);
+    -webkit-transform: translateY(.5rem);
+    -ms-transform: translateY(.5rem);
+    transition: transform .2s ease;
+    -webkit-transition: -webkit-transform .2s ease;
+    -o-transition: transform .2s ease
+
+
+} */
+/*깃허브*/
+
+.data{
+    display: flex;
+    justify-content: center;
+    padding: 0px 170px;
+}
+
+
+.reference{
+    width: 450px;
+    height: 450px;
+}
+
+.reference-img{
+    width: 550px;
+    height: 250px;
+}
+
+
+
+.datail-form {
+    visibility: hidden;
+    height: 0vh;
+    width: 350px;
+    height: 170px;
+    background-color: white;
+    transition: 0.5s;
+    /* transform: scaleY(0); */
+  transform-origin: 0px 0px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+
+.detail-content:hover + .datail-form {
+    /* transform: scaleY(1); */
+
+    visibility: visible;
+    height: 30vh;
+    /*컨텐츠도 시각적으로 숨기고 접근성 트리에도 없어야 하는 경우
+     visibility을 사용한다. display: none; block;일때
+     transition이 안먹힘
+    */
+
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* 큰 배경 이미지 */
+
+
+.big-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url("../image/sea1.png");
+    min-height: 100vh;
+    width: 100%;
+   /* 이미지 비율 맞춤 (포함) */
+  
+    background-size: cover;
+    background-position : center top;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+/* footer ------------------------------ */
+footer {
+  
+
+    background-color: #432;
+    text-align:center;
+    padding : 26px 0;
+}
+
+footer p {
+    color : white;
+}
+
